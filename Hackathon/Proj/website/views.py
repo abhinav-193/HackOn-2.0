@@ -16,6 +16,22 @@ def home():
     
     return render_template("index.html", user=current_user)
 
+@views.route('/contacts')
+@login_required
+def contact():
+    
+
+    
+    return render_template("contact.html", user=current_user)
+
+@views.route('/upload')
+@login_required
+def upload():
+    
+
+    
+    return render_template("upload.html", user=current_user)
+
 @views.route('/download')
 @login_required
 def download():

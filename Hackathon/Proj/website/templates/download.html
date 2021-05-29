@@ -30,26 +30,26 @@
         <div class="nav-top">
           <ul>
             <li>
-              <a href="../Login/index.php">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>
-              <a href="../file-upload-download/downloads.php">Download</a>
+              <a href="/download">Download</a>
             </li>
             <li>
-              <a href="../file-upload-download/index.php">Upload</a>
+              <a href="/upload">Upload</a>
             </li>
             <li>
-              <a href="../Login/About.php">About Us</a>
+              <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="time flex items-center">
           <img src="./icons/clock.svg" alt="">
           <div>
-            <a href="../Login/logout.php" class="mobileLogOut">
+            <a href="/logout" class="mobileLogOut">
               <h5>Log Out</h5>
             </a>
           </div>
@@ -81,11 +81,11 @@
         <nav>
           <div class="navbar magic-shadow">
             <div class="container flex justify-center">
-              <a href="../Login/index.php">Home</a>
+              <a href="/home">Home</a>
               <a href="#" class="navbar active">Download</a>
-              <a href="../file-upload-download/index.php">Upload</a>
-              <a href="../Login/about.php">About Us</a>
-              <a href="../Login/contactUs.html">Contact Us</a>
+              <a href="/upload">Upload</a>
+              <a href="/about">About Us</a>
+              <a href="/contact">Contact Us</a>
             </div>
           </div>
         </nav>
@@ -116,7 +116,7 @@
             <td><?php echo $file['description']; ?></td>
             <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
             <td><?php echo $file['downloads']; ?></td>
-            <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>"><button class="btn btn-secondary">Download</button></a></td>
+            <td><a href="#"><button class="btn btn-secondary">Download</button></a></td>
 
           </tr>
         <?php endforeach; ?>
