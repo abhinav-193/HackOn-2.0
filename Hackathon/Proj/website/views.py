@@ -26,7 +26,7 @@ def contact():
     
 
     
-    return render_template("contact.html", user=current_user)
+    return render_template("cntct.html", user=current_user)
 
 @views.route('/upload', methods=['GET', 'POST'])
 @login_required
