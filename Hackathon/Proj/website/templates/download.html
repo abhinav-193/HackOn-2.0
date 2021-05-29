@@ -10,7 +10,7 @@
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-  <title>Download your Notes</title>
+  <title>PDF Fare</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="static/css/download.css">
 </head>
@@ -30,16 +30,22 @@
         <div class="nav-top">
           <ul>
             <li>
+
+
               <a href="/home">Home</a>
+
             </li>
             <li>
               <a href="/download">Download</a>
             </li>
             <li>
+
+
               <a href="/upload">Upload</a>
             </li>
             <li>
               <a href="/about">About Us</a>
+
             </li>
             <li>
               <a href="/contact">Contact Us</a>
@@ -107,8 +113,15 @@
             <th>Action</th>
           </tr>
 
+<<<<<<< HEAD
           {% for pdf in pdfs %}
+=======
           <tr>
+           
+>>>>>>> c90aca2148de1f09c4ccd83f415e669e29aae57b
+          <tr>
+
+
             <!-- <td><?php echo $file['id']; ?></td> -->
             <td>{{pdf.name}}</td>
             <td>{{pdf.topics}}</td>
@@ -117,16 +130,21 @@
             <td></td>
             <td><a href="{{ url_for('views.download_file', id=pdf.id)}}"><button class="btn btn-secondary">Download</button></a></td>
 
+
           </tr>
+<<<<<<< HEAD
           {% endfor %}
         
+=======
+  
+>>>>>>> c90aca2148de1f09c4ccd83f415e669e29aae57b
 
         
         </table>
         
         <footer  class="copyright">
           <div>
-            Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
+            Copyright © 2021 .All rights reserved by <a href="">PDFFare & Co.</a>
           </div>
         </footer>
       </div>
