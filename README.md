@@ -1,1 +1,7 @@
 # HackOn-2.0
+
+## Group Shinigami
+* Aditya
+* Rishi
+* Mihir
+* Abhinav
