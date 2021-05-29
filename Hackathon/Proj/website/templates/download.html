@@ -10,7 +10,7 @@
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-  <title>Download your Notes</title>
+  <title>Note Exchange System</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="static/css/download.css">
 </head>
@@ -30,16 +30,16 @@
         <div class="nav-top">
           <ul>
             <li>
-              <a href="../Login/index.php">Home</a>
+              <a href="/index">Home</a>
             </li>
             <li>
-              <a href="../file-upload-download/downloads.php">Download</a>
+              <a href="/download">Download</a>
             </li>
             <li>
-              <a href="../file-upload-download/index.php">Upload</a>
+              <a href="">Upload</a>
             </li>
             <li>
-              <a href="../Login/About.php">About Us</a>
+              <a href="">About Us</a>
             </li>
             <li>
               <a href="#">Contact Us</a>
@@ -108,25 +108,25 @@
           </tr>
 
           <tr>
-            <?php foreach ($files as $file) : ?>
+           
           <tr>
-            <!-- <td><?php echo $file['id']; ?></td> -->
-            <td><?php echo $file['name']; ?></td>
-            <td><?php echo $file['sname']; ?></td>
-            <td><?php echo $file['description']; ?></td>
-            <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
-            <td><?php echo $file['downloads']; ?></td>
-            <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>"><button class="btn btn-secondary">Download</button></a></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button class="btn btn-secondary">Download</button></a></td>
 
           </tr>
-        <?php endforeach; ?>
+  
 
         </tr>
         </table>
         
         <footer  class="copyright">
           <div>
-            Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
+            Copyright © 2021 .All rights reserved by <a href="">PDFFare & Co.</a>
           </div>
         </footer>
       </div>
