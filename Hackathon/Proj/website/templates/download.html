@@ -74,11 +74,11 @@
         <header class="topbar">
           <div class="container flex justify-between items-center">
             <div class="icons">
-              <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
+              <p class="userID">Current User: {{user.first_name}}</p>
             </div>
             <div class="auth flex items-center">
               <div>
-                <a style="color: #FE4545;" href="../Login/logout.php">Log Out</a>
+                <a style="color: #FE4545;" href="/logout">Log Out</a>
               </div>
             </div>
           </div>
@@ -113,31 +113,22 @@
             <th>Action</th>
           </tr>
 
-<<<<<<< HEAD
           {% for pdf in pdfs %}
-=======
-          <tr>
-           
->>>>>>> c90aca2148de1f09c4ccd83f415e669e29aae57b
           <tr>
 
 
             <!-- <td><?php echo $file['id']; ?></td> -->
             <td>{{pdf.name}}</td>
-            <td>{{pdf.topics}}</td>
-            <td>{{pdf.id}}</td>
+            <td>{{pdf.branch}}</td>
+            <td>{{pdf.description}}</td>
             
-            <td></td>
+            <td>{{pdf.no_of_upvotes}}</td>
             <td><a href="{{ url_for('views.download_file', id=pdf.id)}}"><button class="btn btn-secondary">Download</button></a></td>
 
 
           </tr>
-<<<<<<< HEAD
           {% endfor %}
         
-=======
-  
->>>>>>> c90aca2148de1f09c4ccd83f415e669e29aae57b
 
         
         </table>

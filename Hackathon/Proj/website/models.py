@@ -11,7 +11,8 @@ class Pdf(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     name = db.Column(db.String(100))
     data = db.Column(db.LargeBinary)
-    topics = db.Column(db.String(1000), default="None")
+    description = db. Column(db.String(1000), default="None")
+    branch = db.Column(db.String(1000), default="None")
     no_of_upvotes = db.Column(db.Integer, default= 0)
     
 
@@ -21,6 +22,6 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
-    username = db.Column(db.String(150), unique=True)
+    
     
     pdf= db.relationship('Pdf', backref='author', lazy=True)

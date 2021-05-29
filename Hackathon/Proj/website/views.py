@@ -33,11 +33,11 @@ def contact():
 def upload():
     if request.method == 'POST':
         pdf_url = request.files.get('pdf')
-        
-        topics = request.form.get('topic')
+        description= request.form.get('description')
+        branch = request.form.get('BRANCH')
         
 
-        new_upload = Pdf(data= pdf_url.read() , user_id= current_user.id , topics = topics, name= pdf_url.filename)
+        new_upload = Pdf(data= pdf_url.read() , user_id= current_user.id ,description=description, branch = branch, name= pdf_url.filename)
         db.session.add(new_upload)
         db.session.commit()
     
