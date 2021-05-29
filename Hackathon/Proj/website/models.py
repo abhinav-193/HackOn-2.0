@@ -9,6 +9,7 @@ from flask import Flask, render_template, url_for
 class Pdf(db.Model):
     id= db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    data = db.Column(db.PickleType, nullable=True)
     no_of_likes = db.Column(db.Integer, default= 0)
     
 
