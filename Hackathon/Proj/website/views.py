@@ -15,3 +15,11 @@ def home():
 
     
     return render_template("index.html", user=current_user)
+
+@views.route('/download')
+@login_required
+def download():
+    
+
+    
+    return render_template("download.html", user=current_user)
