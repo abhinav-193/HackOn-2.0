@@ -1,15 +1,54 @@
-<form align="center" method="POST">
-    <p>Enter your E-Mail : <input type="email" placeholder="  e-mail" id="email" name="email" />
-        <br />
-    </p>
-    <p>Enter your Password : <input type="password" placeholder="  password..." id="password" name="password" /><br />
-    </p>
-
-    <br>
-    <br>
-    <br>
-    <input type="submit" id="button" value="Log-in" /><br />
-    <p>OR</p>
-
-</form>
-<a href="/signup">Want to create an account?<input type="submit" id="button" value="Sign-up" /><br /></a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  
+  <link rel="stylesheet" type="text/css" href="static/css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <img  src="">
+  <video autoplay muted loop id="myVideo" class="wave">
+   <source src="static\assets\170307_Particles_28_1080p.mp4" type="video/mp4">
+ </video>
+  <div class="container">
+    <div class="img">
+      <img src="static\assets\bookshelf-3981515_1280.png">
+    </div>
+    <div class="login-content">
+      <form action="" method="POST">
+        <img src="img/avatar.svg">
+        <h2 class="title">Welcome</h2>
+              <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div">
+                    
+                    <input type="email" placeholder="e-mail" id="email" name="email" />
+                 </div>
+              </div>
+              <div class="input-div pass">
+                 <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                 </div>
+                 <div class="div">
+                    
+                    <input type="password" class="input" name="password" placeholder="password">
+                 </div>
+              </div>
+              <a href="../Login/ForgetPass/enter_email.php">Forgot Password?</a>
+              <input type="submit" class="btn" id="button" value="Log-in">
+               <div class="form-footer">
+            Don't have an account? <a href="/signup" class="ee" value="Sign-up">Sign Up</a>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  
+   
+</body>
+</html>
