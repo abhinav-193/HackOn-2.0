@@ -10,7 +10,7 @@ class Pdf(db.Model):
     id= db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     data = db.Column(db.PickleType, nullable=True)
-    topic = db.Column(db.List, default=[])
+    topic = db.Column(db.String(1000), default="None")
     no_of_upvotes = db.Column(db.Integer, default= 0)
     
 
