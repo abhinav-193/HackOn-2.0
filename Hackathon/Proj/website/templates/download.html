@@ -102,26 +102,26 @@
             <th>Filename</th>
             <th>Subject Name</th>
             <th>Description</th>
-            <th>Size </th>
+            
             <th>Downloads</th>
             <th>Action</th>
           </tr>
 
-          <tr>
-            <?php foreach ($files as $file) : ?>
+          {% for pdf in pdfs %}
           <tr>
             <!-- <td><?php echo $file['id']; ?></td> -->
-            <td><?php echo $file['name']; ?></td>
-            <td><?php echo $file['sname']; ?></td>
-            <td><?php echo $file['description']; ?></td>
-            <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
-            <td><?php echo $file['downloads']; ?></td>
-            <td><a href="#"><button class="btn btn-secondary">Download</button></a></td>
+            <td>{{pdf.name}}</td>
+            <td>{{pdf.topics}}</td>
+            <td>{{pdf.id}}</td>
+            
+            <td></td>
+            <td><a href="{{ url_for('views.download_file', id=pdf.id)}}"><button class="btn btn-secondary">Download</button></a></td>
 
           </tr>
-        <?php endforeach; ?>
+          {% endfor %}
+        
 
-        </tr>
+        
         </table>
         
         <footer  class="copyright">

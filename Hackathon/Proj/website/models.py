@@ -9,8 +9,9 @@ from flask import Flask, render_template, url_for
 class Pdf(db.Model):
     id= db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    data = db.Column(db.PickleType, nullable=True)
-    topic = db.Column(db.String(1000), default="None")
+    name = db.Column(db.String(100))
+    data = db.Column(db.LargeBinary)
+    topics = db.Column(db.String(1000), default="None")
     no_of_upvotes = db.Column(db.Integer, default= 0)
     
 
