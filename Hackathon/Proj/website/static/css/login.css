@@ -15,6 +15,7 @@ body{
   bottom: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   z-index: -1;
 }
 .ee{
@@ -62,7 +63,7 @@ form{
 
 .login-content h2{
   margin: 15px 0;
-  color: #333;
+  color: rgb(255, 254, 254);
   text-transform: uppercase;
   font-size: 2.9rem;
 }
