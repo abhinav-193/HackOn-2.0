@@ -381,6 +381,7 @@ header.hero{
     background:#2D333F;
     padding:4rem 0;
     justify-content: space-evenly;
+    position: none !important
   }
   footer .container{
     display:flex;
