@@ -20,6 +20,14 @@ def home():
     
     return render_template("index.html", user=current_user)
 
+@views.route('/about')
+@login_required
+def about():
+    
+
+    
+    return render_template("about.html", user=current_user)
+
 @views.route('/contacts')
 @login_required
 def contact():
